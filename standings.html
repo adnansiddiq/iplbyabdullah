@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Points Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #181818;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .table-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td {
+            border-bottom: 1px solid #444;
+        }
+
+        tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        tr:hover {
+            background-color: #383838;
+        }
+
+        .win {
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        .loss {
+            color: #ff4444;
+            font-weight: bold;
+        }
+
+        .team-logo {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .header{
+            background-color:silver;
+            padding: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="standings.html">Standings</a>
+    </div>
+    </div>
+    <div class="table-container">
+        <h2>Cricket Points Table</h2>
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Matches</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>NRR</th>
+                <th>Points</th>
+            </tr>
+            <tr><td>1</td><td><img src="rcb.png" class="team-logo">RCB</td><td>2</td><td class="win">2</td><td class="loss">0</td><td>+2.266</td><td>4</td></tr>
+            <tr><td>2</td><td><img src="pbks.png" class="team-logo">PBKS</td><td>2</td><td class="win">2</td><td class="loss">0</td><td>+1.485</td><td>4</td></tr>
+            <tr><td>3</td><td><img src="dc.png" class="team-logo">DC</td><td>2</td><td class="win">2</td><td class="loss">0</td><td>+1.320</td><td>4</td></tr>
+            <tr><td>4</td><td><img src="gt.png" class="team-logo">GT</td><td>2</td><td class="win">1</td><td class="loss">1</td><td>+0.625</td><td>2</td></tr>
+            <tr><td>5</td><td><img src="mi.png" class="team-logo">MI</td><td>3</td><td class="win">1</td><td class="loss">2</td><td>+0.309</td><td>2</td></tr>
+            <tr><td>6</td><td><img src="lsg.png" class="team-logo">LSG</td><td>3</td><td class="win">1</td><td class="loss">2</td><td>-0.150</td><td>2</td></tr>
+            <tr><td>7</td><td><img src="csk.png" class="team-logo">CSK</td><td>3</td><td class="win">1</td><td class="loss">2</td><td>-0.771</td><td>2</td></tr>
+            <tr><td>8</td><td><img src="srh.png" class="team-logo">SRH</td><td>3</td><td class="win">1</td><td class="loss">2</td><td>-0.871</td><td>2</td></tr>
+            <tr><td>9</td><td><img src="rr.png" class="team-logo">RR</td><td>3</td><td class="win">1</td><td class="loss">2</td><td>-1.112</td><td>2</td></tr>
+            <tr><td>10</td><td><img src="kkr.png" class="team-logo">KKR</td><td>3</td><td class="win">1</td><td class="loss">2</td><td>-1.428</td><td>2</td></tr>
+        </table>
+    </div>
+</body>
+</html>
