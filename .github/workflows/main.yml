@@ -1,0 +1,24 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to PRODUCTION
+      env:
+        PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
+
+      run: |
+        echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+        ssh -o StrictHostKeyChecking=no -i private_key ec2-user@3.110.37.26 '
+
+          # Now we have got the access of EC2 and we will start the deploy .
+          ssh event "cd /var/www/html/iplbyabdullah && git pull"
+          '
