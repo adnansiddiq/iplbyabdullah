@@ -3,83 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Points Table</title>
     <style>
         body {
+            background-color: #2f2f2f;
+            color: white;
             font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #fff;
-            text-align: center;
         }
-        .table-container {
+        .container {
             width: 80%;
             margin: auto;
-            overflow-x: auto;
+        }
+        .season {
+            background-color: #3f3f3f;
+            padding: 10px;
+            font-size: 18px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            background: #1e1e1e;
-            margin-top: 20px;
-            border-radius: 10px;
-            overflow: hidden;
+            margin-top: 10px;
         }
         th, td {
-            padding: 12px;
-            text-align: center;
-            border-bottom: 1px solid #333;
+            padding: 10px;
+            border-bottom: 1px solid #555;
         }
         th {
-            background: #333;
+            background-color: #444;
+        }
+        tbody tr:hover {
+            background-color: #555;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            margin: 0 2px;
+        }
+        .icon.win {
+            background-color: green;
+        }
+        .icon.loss {
+            background-color: red;
+        }
+        .icon.normal {
+            background-color: gray;
         }
         .team-logo {
             width: 30px;
+            height: auto;
             vertical-align: middle;
-        }
-        .last5 span {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            margin: 0 3px;
-        }
-        .win {
-            background-color: green;
-        }
-        .loss {
-            background-color: red;
         }
         .header{
             background-color:silver;
-            padding: 12px;
-            margin-right: 20px;
+            padding: 30px;
+            margin: 30px;
+            width: 950px;
+            display: flex;
+            gap:20px;
         }
         .header a:hover{
             color: red; /* hover color */
       text-decoration: underline;
         }
+        nav ul {
+
+display: flex;
+
+list-style: none;
+
+gap: 15px;
+
+}
+
+nav ul li a {
+
+text-decoration: none;
+
+color: black;
+
+}
+nav {
+
+display: flex;
+
+gap: 100px; /* Space between links */
+
+flex-wrap: wrap; /* Allow wrapping if screen is small */
+
+justify-content: center;
+
+}
+
+.nav a {
+
+text-decoration: none;
+
+color: black;
+
+font-weight: bold;
+
+}
     </style>
+    <title>League Table</title>
 </head>
 <body>
     <div class="header">
         <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="standings.html">Standings</a>
-            <a href="stats.html">Stats</a>
-            <a href="purse.html">Purse</a>
-            <a href="retain or released mi.html">mi retain or released Players</a>
-            <a href="retain or released by rcb.html">rcb retain or released Players</a>
-            <a href="about me.html">About me</a>
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="standings.html">Standings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="stats.html">Stats</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="purse.html">Purse</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="retain or released mi.html">mi retain or released Players</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="retain or released by rcb.html">rcb retain or released Players</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="about me.html">About me</a>&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         </div>
-
-    <h2>Cricket Points Table - 2025</h2>
-
-    <div class="table-container">
+    <div class="container">
+        <div class="season">
+            Season <a href="#">2025</a>
+        </div>
         <table>
             <thead>
                 <tr>
-                    <th>Rank</th>
+                    <th>#</th>
                     <th>Team</th>
                     <th>M</th>
                     <th>W</th>
@@ -92,107 +141,166 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td><img src="pbks.png" class="team-logo"> PBKS</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>+1.485</td>
-                    <td>4</td>
-                    <td class="last5"><span class="win"></span><span class="win"></span><span></span><span></span><span></span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="dc.png" class="team-logo"> DC</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td>+1.320</td>
-                    <td>4</td>
-                    <td class="last5"><span class="win"></span><span class="win"></span><span></span><span></span><span></span></td>
-                </tr>
-                <tr>
+                    <td><img src="dc.png" alt="" class="team-logo"> DC</td>
                     <td>3</td>
-                    <td><img src="rcb.png" class="team-logo"> RCB</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>+1.257</td>
+                    <td>6</td>
+                    <td>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon normal">⚪</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="rcb.png" alt="" class="team-logo"> RCB</td>
                     <td>3</td>
                     <td>2</td>
                     <td>1</td>
                     <td>+1.149</td>
                     <td>4</td>
-                    <td class="last5"><span class="win"></span><span class="loss"></span><span></span><span></span><span></span></td>
+                    <td>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon normal">⚪</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td><img src="gt.png" class="team-logo"> GT</td>
+                    <td>3</td>
+                    <td><img src="gt.png" alt="" class="team-logo"> GT</td>
                     <td>3</td>
                     <td>2</td>
                     <td>1</td>
                     <td>+0.807</td>
                     <td>4</td>
-                    <td class="last5"><span class="win"></span><span class="win"></span><span></span><span></span><span></span></td>
+                    <td>
+                        <span class="icon loss">✗</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon normal">⚪</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="pbks.png" alt="" class="team-logo"> PBKS</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>+0.074</td>
+                    <td>4</td>
+                    <td>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon normal">⚪</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td><img src="kkr.png" class="team-logo"> KKR</td>
+                    <td><img src="kkr.png" alt="" class="team-logo"> KKR</td>
                     <td>4</td>
                     <td>2</td>
                     <td>2</td>
                     <td>+0.070</td>
                     <td>4</td>
-                    <td class="last5"><span class="loss"></span><span class="loss"></span><span class="win"></span><span></span><span></span></td>
+                    <td>
+                        <span class="icon loss">✗</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td><img src="mi.png" class="team-logo"> MI</td>
+                    <td><img src="lsg.png" alt="" class="team-logo"> LSG</td>
                     <td>4</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>+0.309</td>
                     <td>2</td>
-                    <td class="last5"><span class="win"></span><span class="loss"></span><span></span><span></span><span></span></td>
+                    <td>2</td>
+                    <td>+0.048</td>
+                    <td>4</td>
+                    <td>
+                        <span class="icon loss">✗</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td><img src="lsg.png" class="team-logo"> LSG</td>
-                    <td>3</td>
-                    <td>1</td>
+                    <td><img src="rr.png" alt="" class="team-logo"> RR</td>
+                    <td>4</td>
                     <td>2</td>
-                    <td>-0.150</td>
                     <td>2</td>
-                    <td class="last5"><span class="loss"></span><span class="loss"></span><span></span><span></span><span></span></td>
+                    <td>-0.185</td>
+                    <td>4</td>
+                    <td>
+                        <span class="icon loss">✗</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td><img src="csk.png" class="team-logo"> CSK</td>
-                    <td>3</td>
+                    <td><img src="mi.png" alt="" class="team-logo"> MI</td>
+                    <td>4</td>
                     <td>1</td>
+                    <td>3</td>
+                    <td>+0.108</td>
                     <td>2</td>
-                    <td>-0.771</td>
-                    <td>2</td>
-                    <td class="last5"><span class="loss"></span><span class="win"></span><span></span><span></span><span></span></td>
+                    <td>
+                        <span class="icon loss">✗</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td><img src="rr.png" class="team-logo"> RR</td>
-                    <td>3</td>
+                    <td><img src="csk.png" alt="" class="team-logo"> CSK</td>
+                    <td>4</td>
                     <td>1</td>
+                    <td>3</td>
+                    <td>-0.891</td>
                     <td>2</td>
-                    <td>-1.112</td>
-                    <td>2</td>
-                    <td class="last5"><span class="win"></span><span class="loss"></span><span></span><span></span><span></span></td>
+                    <td>
+                        <span class="icon win">✓</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon loss">✗</span>
+                    </td>
                 </tr>
                 <tr>
                     <td>10</td>
-                    <td><img src="srh.png" class="team-logo"> SRH</td>
+                    <td><img src="srh.png" alt="" class="team-logo"> SRH</td>
                     <td>4</td>
                     <td>1</td>
                     <td>3</td>
                     <td>-1.612</td>
                     <td>2</td>
-                    <td class="last5"><span class="loss"></span><span class="loss"></span><span class="loss"></span><span></span><span></span></td>
+                    <td>
+                        <span class="icon loss">✗</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon win">✓</span>
+                        <span class="icon loss">✗</span>
+                        <span class="icon normal">⚪</span>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </div>
-
 </body>
 </html>
