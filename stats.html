@@ -41,7 +41,6 @@
             align-items: center;
         }
         .player-img {
-            width: 30px;
             height: 30px;
             border-radius: 50%;
             margin-right: 10px;
@@ -49,7 +48,6 @@
         .header{
             background-color:silver;
             padding: 30px;
-            width: 950px;
             text-align: center;
             margin-right: 30px;
         }
@@ -57,105 +55,87 @@
             color: red; /* hover color */
       text-decoration: underline;
         }
-        nav ul {
-
-display: flex;
-
-list-style: none;
-
-gap: 15px;
-
-}
-
-nav ul li a {
-
-text-decoration: none;
-
-color: black;
-
-}
-nav {
-
-display: flex;
-
-gap: 100px; /* Space between links */
-
-flex-wrap: wrap; /* Allow wrapping if screen is small */
-
-justify-content: center;
-
-}
-
-.nav a{
-
-text-decoration: none;
-
-color: black;
-
-font-weight: bold;
-}
+        
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="nav">
-            <a href="welcome.html">welcome</a>
-            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="standings.html">Standings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="stats.html">Stats</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="purse.html">Purse</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="retain or released mi.html">mi retain or released Players</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="retain or released by rcb.html">rcb retain or released Players</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sp;&nbsp;
-            <a href="retain or relased by csk.html">retain or relased by csk</a>&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="retain or relased by lsg.html">retain or released by lsg</a>
-            <a href="about me.html">About me</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
-        </div>
-        </div>
+    <!-- Add Bootstrap CSS in your <head> if not already -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="stats.html">stats</a>
+    
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarLinks">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+        <li class="nav-item"><a class="nav-link" href="stats.html">Stats</a></li>
+        <li class="nav-item"><a class="nav-link" href="purse.html">Purse</a></li>
+        <li class="nav-item"><a class="nav-link" href="retain or released mi.html">MI Retain or Released</a></li>
+        <li class="nav-item"><a class="nav-link" href="retain or released by rcb.html">RCB Retain or Released</a></li>
+        <li class="nav-item"><a class="nav-link" href="retain or relased by lsg.html">LSG Retain or Released</a></li>
+        <li class="nav-item"><a class="nav-link" href="retain or relased by csk.html">CSK Retain or Released</a></li>
+        <li class="nav-item"><a class="nav-link" href="about me.html">About Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Add Bootstrap JS before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <div class="container">
-        <h2>Runs</h2>
+        <h2 class="text-white">Runs</h2>
         <table>
-            <tr><th>Player</th><th>M</th><th>Avg</th><th>Runs</th></tr>
-            <tr><td class="player-name"><img src="poor.png" class="player-img">Nicholas Pooran</td><td>3</td><td>63.00</td><td>189</td></tr>
-            <tr><td class="player-name"><img src="iyer.png" class="player-img">Shreyas Iyer</td><td>2</td><td>-</td><td>149</td></tr>
-            <tr><td class="player-name"><img src="sudharsan.png" class="player-img">Sai Sudharsan</td><td>3</td><td>68.50</td><td>137</td></tr>
-            <tr><td class="player-name"><img src="head.png" class="player-img">Travis Head</td><td>3</td><td>-</td><td>136</td></tr>
-            <tr><td class="player-name"><img src="marsh.png" class="player-img">Mitchell Marsh</td><td>3</td><td>41.33</td><td>124</td></tr>
+            <tr class="text-white"><th>Player</th><th>M</th><th>Avg</th><th>Runs</th></tr>
+            <tr class="text-white"><td class="player-name"><img src="poor.png" class="player-img">Nicholas Pooran</td><td>3</td><td>63.00</td><td>189</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="iyer.png" class="player-img">Shreyas Iyer</td><td>2</td><td>-</td><td>149</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="sudharsan.png" class="player-img">Sai Sudharsan</td><td>3</td><td>68.50</td><td>137</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="head.png" class="player-img">Travis Head</td><td>3</td><td>-</td><td>136</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="marsh.png" class="player-img">Mitchell Marsh</td><td>3</td><td>41.33</td><td>124</td></tr>
         </table>
         
-        <h2>Wickets</h2>
+        <h2 class="text-white">Wickets</h2>
         <table>
-            <tr><th>Player</th><th>M</th><th>W</th></tr>
-            <tr><td class="player-name"><img src="noor.png" class="player-img">Noor Ahmad</td><td>3</td><td>9</td></tr>
-            <tr><td class="player-name"><img src="starc.png" class="player-img">Mitchell Starc</td><td>2</td><td>8</td></tr>
-            <tr><td class="player-name"><img src="khaleel.png" class="player-img">Khaleel Ahmed</td><td>3</td><td>6</td></tr>
-            <tr><td class="player-name"><img src="thakur.png" class="player-img">Shardul Thakur</td><td>3</td><td>6</td></tr>
-            <tr><td class="player-name"><img src="arshdeep.png" class="player-img">Arshdeep Singh</td><td>3</td><td>6</td></tr>
-            <tr><td class="player-name"><img src="sai kishore.png" class="player-img">sai kishore</td><td>3</td><td>6</td></tr>
+            <tr class="text-white"><th>Player</th><th>M</th><th>W</th></tr>
+            <tr class="text-white"><td class="player-name"><img src="noor.png" class="player-img">Noor Ahmad</td><td>3</td><td>9</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="starc.png" class="player-img">Mitchell Starc</td><td>2</td><td>8</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="khaleel.png" class="player-img">Khaleel Ahmed</td><td>3</td><td>6</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="thakur.png" class="player-img">Shardul Thakur</td><td>3</td><td>6</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="arshdeep.png" class="player-img">Arshdeep Singh</td><td>3</td><td>6</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="sai kishore.png" class="player-img">sai kishore</td><td>3</td><td>6</td></tr>
         </table>
         
-        <h2>highest scores</h2>
+        <h2 class="text-white">highest scores</h2>
         <table>
-            <tr><th>Player</th><th>sr</th><th>hs</th></tr>
-            <tr><td class="player-name"><img src=" kishan.png" class="player-img">ishan kishan</td><td>225.53</td><td>106</td></tr>
-            <tr><td class="player-name"><img src="de kock.png" class="player-img">de kock</td><td>159.01</td><td>97</td></tr>
-            <tr><td class="player-name"><img src=" iyer.png" class="player-img">shreyas Iyer</td><td>230.95</td><td>97</td></tr>
-            <tr><td class="player-name"><img src="nitish rana.png" class="player-img">nitish rana</td><td>225.00</td><td>81</td></tr>
-            <tr><td class="player-name"><img src="poor.png" class="player-img">nicolas pooran</td><td>250.00</td><td>75</td></tr>
+            <tr class="text-white"><th>Player</th><th>sr</th><th>hs</th></tr>
+            <tr class="text-white"><td class="player-name"><img src=" kishan.png" class="player-img">ishan kishan</td><td>225.53</td><td>106</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="de kock.png" class="player-img">de kock</td><td>159.01</td><td>97</td></tr>
+            <tr class="text-white" ><td class="player-name"><img src=" iyer.png" class="player-img">shreyas Iyer</td><td>230.95</td><td>97</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="nitish rana.png" class="player-img">nitish rana</td><td>225.00</td><td>81</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="poor.png" class="player-img">nicolas pooran</td><td>250.00</td><td>75</td></tr>
         </table>
         
-        <h2>best bowling figures</h2>
+        <h2 class="text-white">best bowling figures</h2>
         <table>
-            <tr><th>Player</th><th>O</th><th>econ</th><th>bb</th></tr>
-            <tr><td class="player-name"><img src="starc.png" class="player-img">Mitchell Starc</td><td>3.4</td><td>9.54</td><td>5/35</td></tr>
-            <tr><td class="player-name"><img src="noor.png" class="player-img">noor Ahmad</td><td>4</td><td>4.50</td><td>4/18</td></tr>
-            <tr><td class="player-name"><img src="ashwani.png" class="player-img">ashwani kumar</td><td>3</td><td>8.00</td><td>4/24</td></tr>
-            <tr><td class="player-name"><img src="thakur.png" class="player-img">shardul Thakur</td><td>4</td><td>8.50</td><td>4/34</td></tr>
-            <tr><td class="player-name"><img src="hasaranga.png" class="player-img">wanindu hasaranga</td><td>4</td><td>8.75</td><td>4/35</td></tr>
+            <tr class="text-white"><th>Player</th><th>O</th><th>econ</th><th>bb</th></tr>
+            <tr class="text-white"><td class="player-name"><img src="starc.png" class="player-img">Mitchell Starc</td><td>3.4</td><td>9.54</td><td>5/35</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="noor.png" class="player-img">noor Ahmad</td><td>4</td><td>4.50</td><td>4/18</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="ashwani.png" class="player-img">ashwani kumar</td><td>3</td><td>8.00</td><td>4/24</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="thakur.png" class="player-img">shardul Thakur</td><td>4</td><td>8.50</td><td>4/34</td></tr>
+            <tr class="text-white"><td class="player-name"><img src="hasaranga.png" class="player-img">wanindu hasaranga</td><td>4</td><td>8.75</td><td>4/35</td></tr>
         </table>
         
-        <h2>batting average</h2>
-        <table>
+        <h2 class="text-white">batting average</h2>
+        <table class="text-white">
             <tr><th>Player</th><th>m</th><th>runs</th><th>Avg</th></tr>
             <tr><td class="player-name"><img src="buttler.png" class="player-img">jos buttler</td><td>3</td><td>166</td><td>83.00</td></tr>
             <tr><td class="player-name"><img src="poor.png" class="player-img">nicolas pooran</td><td>3</td><td>189</td><td>63.00</td></tr>
@@ -164,8 +144,8 @@ font-weight: bold;
             <tr><td class="player-name"><img src="stubbs.png" class="player-img">tristian stubbs</td><td>2</td><td>55</td><td>55.00</td></tr>
         </table>
         
-        <h2>bowling average</h2>
-        <table>
+        <h2 class="text-white">bowling average</h2>
+        <table class="text-white">
             <tr><th>Player</th><th>m</th><th>w</th><th>Avg</th></tr>
             <tr><td class="player-name"><img src="ashwani.png" class="player-img">aswani kumar</td><td>1</td><td>4</td><td>6.00</td></tr>
             <tr><td class="player-name"><img src="kuldeep.png" class="player-img">kuldeep yadav</td><td>2</td><td>5</td><td>8.40</td></tr>
@@ -174,13 +154,13 @@ font-weight: bold;
             <tr><td class="player-name"><img src="moeen ali.png" class="player-img">moeen ali</td><td>1</td><td>2</td><td>11.50</td></tr>
         </table>
         
-        <h2>most hundereds</h2>
-        <table>
+        <h2 class="text-white">most hundereds</h2>
+        <table class="text-white">
             <tr><th>Player</th><th>M</th><th>Runs</th><th>100s</th></tr>
             <tr><td class="player-name"><img src="kishan.png" class="player-img">ishan kishan</td><td>3</td><td>108</td><td>1</td></tr>
         </table>
-        <h2>most fifties</h2>
-        <table>
+        <h2 class="text-white">most fifties</h2>
+        <table class="text-white">
             <tr><th>m</th><th>runs</th><th>50s</th></tr>
             <tr><td class="player-name"><img src="buttler.png" class="player-img">jos buttler</td><td>3</td><td>166</td><td>2</td></tr>
             <tr><td class="player-name"><img src="marsh.png" class="player-img">Mitchell Marsh</td><td>3</td><td>124</td><td>2</td></tr>
