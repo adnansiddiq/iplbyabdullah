@@ -3,74 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Standings</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #2f2f2f;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-        .season {
-            background-color: #3f3f3f;
-            padding: 10px;
-            font-size: 18px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            padding: 10px;
-            border-bottom: 1px solid #555;
-        }
-        th {
-            background-color: #444;
-        }
-        tbody tr:hover {
-            background-color: #555;
-        }
-        .icon {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            display: inline-block;
-            text-align: center;
-            line-height: 20px;
-            margin: 0 2px;
-        }
-        .icon.win {
-            background-color: green;
-        }
-        .icon.loss {
-            background-color: red;
-        }
-        .icon.normal {
-            background-color: gray;
-        }
-        .team-logo {
+        .table img {
             width: 30px;
-            height: auto;
-            vertical-align: middle;
         }
-        .header{
-            background-color:silver;
-            padding: 30px;
-            margin: 30px;
-            display: flex;
-            gap:20px;
+        .last5 span {
+            font-size: 20px;
         }
-        .header a:hover{
-            color: red; /* hover color */
-      text-decoration: underline;
+        .last5 span.win {
+            color: green;
+        }
+        .last5 span.loss {
+            color: red;
+        }
+        .last5 span.draw {
+            color: grey;
         }
     </style>
-    <title>League Table</title>
 </head>
 <body>
     <!-- Add Bootstrap CSS in your <head> if not already -->
@@ -79,7 +30,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="standings.html">Standings</a>
+    <a class="navbar-brand" href="standings.html">standings</a>
     
     <!-- Toggler for mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
@@ -104,16 +55,11 @@
 </nav>
 
 <!-- Add Bootstrap JS before </body> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <div class="container"class="text-white">
-        <div class="season">
-            Season <a href="#">2025</a>
-        </div>
-        <table>
+    <div class="container mt-5">
+        <h2 class="text-left">Season <span class="text-primary">2025</span></h2>
+        <table class="table table-dark table-striped">
             <thead>
-                <tr class="text-white">
-                    <th>#</th>
+                <tr>
                     <th>Team</th>
                     <th>M</th>
                     <th>W</th>
@@ -125,167 +71,159 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td><img src="dc.png" alt="" class="team-logo"> DC</td>
-                    <td>3</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>+1.257</td>
-                    <td>6</td>
-                    <td>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon normal">⚪</span>
-                        <span class="icon normal">⚪</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="rcb.png" alt="" class="team-logo"> RCB</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>+1.149</td>
-                    <td>4</td>
-                    <td>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon normal">⚪</span>
-                        <span class="icon normal">⚪</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><img src="gt.png" alt="" class="team-logo"> GT</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>+0.807</td>
-                    <td>4</td>
-                    <td>
-                        <span class="icon loss">✗</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon normal">⚪</span>
-                        <span class="icon normal">⚪</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><img src="pbks.png" alt="" class="team-logo"> PBKS</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>+0.074</td>
-                    <td>4</td>
-                    <td>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon normal">⚪</span>
-                        <span class="icon normal">⚪</span>
-                    </td>
-                </tr>
-                <tr>
+                    <td><img src="GT.png" alt="GT"> GT</td>
                     <td>5</td>
-                    <td><img src="kkr.png" alt="" class="team-logo"> KKR</td>
                     <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>+0.070</td>
-                    <td>4</td>
-                    <td>
-                        <span class="icon loss">✗</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon normal">⚪</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><img src="lsg.png" alt="" class="team-logo"> LSG</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>+0.048</td>
-                    <td>4</td>
-                    <td>
-                        <span class="icon loss">✗</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon normal">⚪</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><img src="rr.png" alt="" class="team-logo"> RR</td>
-                    <td>4</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>-0.185</td>
-                    <td>4</td>
-                    <td>
-                        <span class="icon loss">✗</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon normal">⚪</span>
-                    </td>
-                </tr>
-                <tr>
+                    <td>1</td>
+                    <td>+1.413</td>
                     <td>8</td>
-                    <td><img src="mi.png" alt="" class="team-logo"> MI</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>+0.108</td>
-                    <td>2</td>
-                    <td>
-                        <span class="icon loss">✗</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon normal">⚪</span>
+                    <td class="last5">
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
                     </td>
                 </tr>
                 <tr>
-                    <td>9</td>
-                    <td><img src="csk.png" alt="" class="team-logo"> CSK</td>
+                    <td><img src="DC.png" alt="DC"> DC</td>
                     <td>4</td>
-                    <td>1</td>
-                    <td>3</td>
-                    <td>-0.891</td>
-                    <td>2</td>
-                    <td>
-                        <span class="icon win">✓</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon loss">✗</span>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>+1.278</td>
+                    <td>8</td>
+                    <td class="last5">
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
+                        <span class="draw">⚪</span>
                     </td>
                 </tr>
                 <tr>
-                    <td>10</td>
-                    <td><img src="srh.png" alt="" class="team-logo"> SRH</td>
-                    <td>4</td>
-                    <td>1</td>
+                    <td><img src="RCB.png" alt="RCB"> RCB</td>
+                    <td>5</td>
                     <td>3</td>
-                    <td>-1.612</td>
                     <td>2</td>
-                    <td>
-                        <span class="icon loss">✗</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon win">✓</span>
-                        <span class="icon loss">✗</span>
-                        <span class="icon normal">⚪</span>
+                    <td>+0.539</td>
+                    <td>6</td>
+                    <td class="last5">
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="PBKS.png" alt="PBKS"> PBKS</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>+0.289</td>
+                    <td>6</td>
+                    <td class="last5">
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
+                        <span class="draw">⚪</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="LSG.png" alt="LSG"> LSG</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>+0.078</td>
+                    <td>6</td>
+                    <td class="last5">
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="win">✓</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="KKR.png" alt="KKR"> KKR</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>-0.056</td>
+                    <td>4</td>
+                    <td class="last5">
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="RR.png" alt="RR"> RR</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>-0.733</td>
+                    <td>4</td>
+                    <td class="last5">
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="MI.png" alt="MI"> MI</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>-0.010</td>
+                    <td>2</td>
+                    <td class="last5">
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="CSK.png" alt="CSK"> CSK</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>-0.889</td>
+                    <td>2</td>
+                    <td class="last5">
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="SRH.png" alt="SRH"> SRH</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>-1.629</td>
+                    <td>2</td>
+                    <td class="last5">
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="loss">✗</span>
+                        <span class="win">✓</span>
+                        <span class="loss">✗</span>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

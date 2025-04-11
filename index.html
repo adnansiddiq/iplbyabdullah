@@ -8,103 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <style>
-        body {
-            text-align: center;
-            background-color: #0a1931;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .logo {
-            font-size: 30px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        .match {
-            margin: 20px auto;
-            width: 560px;
-            padding: 15px;
-            background-color: #1a1a2e;
-            border-radius: 10px;
-        }
-        .match h2 {
-            margin-bottom: 10px;
-        }
-        .teams {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px 0;
-        }
-        .team {
-            width: 150px;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 10px;
-        }
-        .team-a { background-color: blue; }
-        .team-b { background-color: maroon; }
-        .vs {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 0 10px;
-        }
-        .score {
-            font-size: 18px;
-            margin: 5px 0;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-        table {
-            width: 80%;
-            margin: auto;
-            border-collapse: collapse;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        th, td {
-            border: 1px solid #333;
-            padding: 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #292929;
-            color: #f4a261;
-        }
-        .win {
-            color: #4caf50;
-        }
-        .loss {
-            color: #ff5252;
-        }
-        img {
-            height: 20px;
-            margin-right: 5px;
-            vertical-align: middle;
-        }
-        .header{
-            background-color:silver;
-            padding: 12px;
-            margin: 30px;
-            display: flex;
-            gap:20px;
-        }
-        .header a:hover{
-            color: red; /* hover color */
-      text-decoration: underline;
-        }
-        .nav a {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
+        
 
     </style>
 </head>
@@ -142,28 +46,28 @@
 <!-- Add Bootstrap JS before </body> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="logo">IPL HIGHLIGHTS</div>
+    <div class="logo fw-bold fs-1">IPL HIGHLIGHTS</div>
     </div>
     
-    <div class="match">
+    <div class="match bg-dark">
         <h2 class="text-white">Match 1</h2>
-        <div class="text-white">
-            <div class="team team-a">royal Challengers bangolore</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">kolkata knight riders </div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="bg-primary text-white p-3 rounded">royal Challengers bangolore</div>
+            <div class="text-white fw-bold">VS</div>
+            <div class="bg-danger text-white p-3 rounded">kolkata knight riders </div>
         </div>
-        <div class="text-white">rcb:177/3 (16.2 overs)</div>
-        <div class="text-white">kkr:174/8 (20 overs)</div>
-        <div class="text-white">rcb won by (7 wickets 22 balls left)</div>
+        <div class="text-white p-10">rcb:177/3 (16.2 overs)</div>
+        <div class="text-white p=10">kkr:174/8 (20 overs)</div>
+        <div class="text-white p-10">rcb won by (7 wickets 22 balls left)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ANvLp0MR1q8?si=r1eY3ewP-8HXNT9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     
-    <div class="match">
+    <div class="bg-dark">
         <h2 class="text-white">Match 2</h2>
-        <div class="text-white">
-            <div class="team team-a">Sunrisers Hyderabad</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Rajasthan Royals</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Sunrisers Hyderabad</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Rajasthan Royals</div>
         </div>
         <div class="text-white">Srh:286/6(20 overs)</div>
         <div class="text-white">RR:242/6(20 overs)</div>
@@ -171,12 +75,12 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PCW7KkD9l_k?si=Nzjx5iy7mzU0y4Vn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     
-    <div class="match">
+    <div class="bg-dark">
         <h2>Match 3</h2>
-        <div class="text-white">
-            <div class="team team-a">Mumbai Indians</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Chennai super Kings</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Mumbai Indians</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Chennai super Kings</div>
         </div>
         <div class="text-white">Mi: 155/9 (20 overs)</div>
         <div class="text-white">CSK: 158/6 (19.1 overs)</div>
@@ -184,12 +88,12 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/i_JWdG4JorA?si=k3hOpawbx8U9Fkzf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     
-    <div class="match">
+    <div class="bg-dark">
         <h2 class="text-white">Match 4</h2>
-        <div class="text-white">
-            <div class="team team-a">lucknow super kings</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">delhi Capitals</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded ">lucknow super kings</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">delhi Capitals</div>
         </div>
         <div class="text-white">LSG: 209/8(20 overs)</div>
         <div class="text-white">DC: 211/7 (19.3 overs)</div>
@@ -197,12 +101,12 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DQcORJthKHI?si=hCUV4EO28Nze65Jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     
-    <div class="match">
+    <div class="bg-dark">
         <h2 class="text-white">Match 5</h2>
-        <div class="text-white">
-            <div class="team team-a">punjab kings</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Gujarat Titans</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">punjab kings</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Gujarat Titans</div>
         </div>
         <div class="text-white">pbks:243/5 (20 overs)</div>
         <div class="text-white">gt:232/5 (20 overs)</div>
@@ -211,12 +115,12 @@
         </div>
     </div>
     
-    <div class="match">
+    <div class="bg-dark">
         <h2 class="text-white">Match 6</h2>
-        <div class="text-white">
-            <div class="team team-a">Rajasthan Royals</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">kolkata knight riders</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Rajasthan Royals</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">kolkata knight riders</div>
         </div>
         <div class="text-white">RR: 151/9 (20 overs)</div>
         <div class="text-white"> kkr:153/2 (17.3 overs)</div>
@@ -224,12 +128,12 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/dISSE_BeHtA?si=raM4kZqVnZhQG-ZB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     
-    <div class="match">
+    <div class="bg-dark">
         <h2 class=text-white> Match 7</h2>
-        <div class="text-white">
-            <div class="team team-a">Sunrisers Hyderabad</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">lucknow super giants</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Sunrisers Hyderabad</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">lucknow super giants</div>
         </div>
         <div class="text-white">LSG: 190/9(20 overs)</div>
         <div class="text-white">srh: 193/5 (16.1 overs)</div>
@@ -238,161 +142,208 @@
     </div>
     
     
-    <div class="match">
+    <div class="bg-dark">
         <h2 class="text-white">Match 8</h2>
-        <div class="text-white">
-            <div class="team team-a">Royals Challengers bangolore</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Chennai super kings</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Royals Challengers bangolore</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Chennai super kings</div>
         </div>
         <div class="text-white">rcb: 196/7 (20 overs)</div>
         <div class="text-white">csk: 146/8 (20 overs)</div>
         <div class="text-white">rcb won by(50 runs)</div> 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/X0bjgfXxdkQ?si=KtPKR9E358JzOPYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
         <h2 class="text-white">Match 9</h2>
-        <div class="teams">
-            <div class="team team-a">mumbai Indians</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Gujarat Titans</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">mumbai Indians</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Gujarat Titans</div>
         </div>
         <div class="text-white">gt: 196/8(20 overs)</div>
         <div class="text-white">mi: 160/6(20 overs)</div>
         <div class="text-white">gt won by(34 runs)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Mw7xXQpReqA?si=LkGsq3fD-8RiiVht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 10</h2>
-        <div class="text-white">
-            <div class="team team-a">delhi capitals</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Sunrisers Hyderabad</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">delhi capitals</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Sunrisers Hyderabad</div>
         </div>
         <div class="text-white">dc:166/3(16 overs)</div>
         <div class="text-white">srh:163/10(18.4 overs)</div>
         <div class="text-white">dc won by(7 wickets 24 balls left)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/k3-MlPVSnYI?si=KetcCMmbTnK91FB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 11</h2>
-        <div class="text-white">
-            <div class="team team-a">Rajasthan Royals</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Chennai super kings</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Rajasthan Royals</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Chennai super kings</div>
         </div>
         <div class="text-white">rr:182/9(20 overs)</div>
         <div class="text-white">CSK:176/6(20 overs)</div>
         <div class="text-white">rr won by(6 runs)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/mrJNfY7-g1o?si=APaBNeDi_NTaw0HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 12</h2>
-        <div class="text-white">
-            <div class="team team-a">Mumbai Indians</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">kolkata knight riders</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Mumbai Indians</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">kolkata knight riders</div>
         </div>
         <div class="text-white">mi:121/2(12.5)</div>
         <div class="text-white">mi:116/10(16.5 overs)</div>
         <div class="text-white">mi won by(8 wickets 43 balls left)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/QxF1OdcE5no?si=M5ZijkO8U3ySmi4z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 13</h2>
-        <div class="text-white">
-            <div class="team team-a">lucknow super giants</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">punjab kings</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">lucknow super giants</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">punjab kings</div>
         </div>
         <div class="text-white">lsg:171/7(20 overs)</div>
         <div class="text-white">pbks:177/2(16.2 overs)</div>
         <div class="text-white">pbks won by(8 wickets 22 balls left)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VVSaNRGZpk0?si=M9aCsdJM7kRVF4qt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 14</h2>
-        <div class="text-white">
-            <div class="team team-a">Royals Challengers bangolore</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Gujarat Titans</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Royals Challengers bangolore</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Gujarat Titans</div>
         </div>
         <div class="text-white">rcb:169/8(20 overs)</div>
         <div class="text-white">gt:170/2(17.5 overs)</div>
         <div class="text-white ">gt won by (8 wickets 13 balls left)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hC_IjY7xNrU?si=hRIM7E5BELAVEu6D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 15</h2>
-        <div class="text-white">
-            <div class="team team-a">kolkata knight riders</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Sunrisers Hyderabad</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">kolkata knight riders</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Sunrisers Hyderabad</div>
         </div>
         <div class="text-white">kkr:200/6(20 overs)</div>
         <div class="text-white">srh:120/10(16.4)</div>
         <div class="text-white">kkr won by(80 runs)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-KPjQCdTR3o?si=JdFghmHCvoa1jyfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 16</h2>
-        <div class="text-white">
-            <div class="team team-a">lucknow super giants</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">mumbai Indians</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">lucknow super giants</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">mumbai Indians</div>
         </div>
         <div class="text-white">LSG:204/8(20 overs)</div>
         <div class="text-white">mi:191/5(20 overs)</div>
         <div class="text-white">lsg won by (12 runs)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Hz5Yqvj9XmU?si=PHxKpRSefGWM3gvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 17</h2>
-        <div class="text-white">
-            <div class="team team-a">Chennai super  Kings</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">delhi capitals</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Chennai super  Kings</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">delhi capitals</div>
         </div>
         <div class="text-white">csk:158/5(20 overs)</div>
         <div class="text-white">dc:183/6(20 overs)</div>
         <div class="text-white">dc won by (25 runs)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/LGB4cWGkTVM?si=nlTfcGzKMfJe8h67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 18</h2>
-        <div class="text-white">
-            <div class="team team-a">punjab kings </div>
-            <div class="vs">VS</div>
-            <div class="team team-b">rajistan Royals</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">punjab kings </div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-bbg-danger text-white p-3 rounded ">rajistan Royals</div>
         </div>
         <div class="text-white">pbks:155/9(20 overs)</div>
         <div class="text-white">rr:205/4(20 overs)</div>
         <div class="text-white">rr won by(50 runs)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/B156nKyiOdw?si=29pY_b8TJ5HNZRF5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 19</h2>
-        <div class="text-white">
-            <div class="team team-a">Sunrisers Hyderabad</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">Gujarat Titans</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Sunrisers Hyderabad</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">Gujarat Titans</div>
         </div>
-        <div class="text-white">srh:152/8(20 overs)</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">srh:152/8(20 overs)</div>
         <div class="text-white">gt:153/3(16.4 overs)</div>
         <div class="text-white">gt won by(7 wickets)</div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/XmhB_cmQDto?si=xsReligSAjIWBG3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div class="match">
+    <div class="bg-dark">
     <h2 class="text-white">Match 20</h2>
-        <div class="text-white">
-            <div class="team team-a">Royals Challengers bangolore</div>
-            <div class="vs">VS</div>
-            <div class="team team-b">mumbai Indians</div>
+        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+            <div class="team team-a bg-primary text-white p-3 rounded">Royals Challengers bangolore</div>
+            <div class="vs text-white fw-bold">VS</div>
+            <div class="team team-b bg-danger text-white p-3 rounded">mumbai Indians</div>
         </div>
         <div class="text-white">rcb:221/5(20 overs)</div>
         <div class="text-white">mi:209/9(20 overs)</div>
         <div class="text-white">rcb won by(12 runs)</div>
     </div>
+    <div class="bg-dark">
+        <h2 class="text-white">Match 21</h2>
+            <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+                <div class="team team-a bg-primary text-white p-3 rounded">lucknow super giants</div>
+                <div class="vs text-white fw-bold">VS</div>
+                <div class="team team-b bg-danger text-white p-3 rounded">kolkata knight riders</div>
+            </div>
+            <div class="text-white">lsg:238/3(20 overs)</div>
+            <div class="text-white">kkr:234/7(20 overs)</div>
+            <div class="text-white">lsg won by(4 runs)</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RmXmdnf8Z_k?si=5KDt_OfWYcCwFX-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="bg-dark">
+            <h2 class="text-white">Match 22</h2>
+                <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+                    <div class="team team-a bg-primary text-white p-3 rounded">punjab kings</div>
+                    <div class="vs text-white fw-bold">VS</div>
+                    <div class="team team-b bg-danger text-white p-3 rounded">Chennai super kings</div>
+                </div>
+                <div class="text-white">pbks:219/6(20 overs)</div>
+                <div class="text-white">csk:201/5(20 overs)</div>
+                <div class="text-white">pbks won by(18 runs)</div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eIB97M0THo8?si=lVEvRqUU73Pbjscm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="bg-dark">
+                <h2 class="text-white">Match 23</h2>
+                    <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+                        <div class="team team-a bg-primary text-white p-3 rounded">Gujarat Titans</div>
+                        <div class="vs text-white fw-bold">VS</div>
+                        <div class="team team-b bg-danger text-white p-3 rounded">rajistan Royals</div>
+                    </div>
+                    <div class="text-white">gt:217/6(20 overs)</div>
+                    <div class="text-white">rr:159/10(19.2 overs)</div>
+                    <div class="text-white">gt won by(58 runs)</div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gtzEvtpTyVQ?si=fUSHD0eTUWiVouvT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="bg-dark">
+                    <h2 class="text-white">Match 24</h2>
+                        <div class="d-flex justify-content-center align-items-center gap-3 p-3">
+                            <div class="team team-a bg-primary text-white p-3 rounded">royal Challengers bangolore</div>
+                            <div class="vs text-white fw-bold">VS</div>
+                            <div class="team team-b bg-danger text-white p-3 rounded">delhi capitals</div>
+                        </div>
+                        <div class="text-white">RCB:163/7(20 overs)</div>
+                        <div class="text-white">dc:169/4(17.5 overs)</div>
+                        <div class="text-white">dc won by(6 wickets 13 balls left)</div>
+                    </div>
 
 
     <a href="#" class="button">WATCH NOW</a>
