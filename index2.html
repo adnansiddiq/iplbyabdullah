@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPL matches</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      background-color: #f8f9fa;
+      padding-top: 1rem;
+    }
+
+    .video-card img,
+    .short-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .short-card {
+      flex: 0 0 auto;
+      width: 200px;
+      height: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .short-card iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IPL HIGHLIGHTS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <form class="d-flex mx-auto my-2 my-lg-0 w-100 px-3">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="d-md-none d-block">
+        <div class="row">
+            <div class="col-4">
+                <a class="nav-link p-2" href="index.html">🏠 Home</a>
+            </div>
+            <div class="col-4">
+                <a class="nav-link p-2" href="news.html">📰 News</a>
+            </div>
+            <div class="col-4">
+                <a class="nav-link p-2" href="player of the matches.html">🏅 potm</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row ">
+
+            <div class="col-md-2 d-none d-md-block border">
+                <!-- Desktop Sidebar -->
+                <div class="d-none d-md-block">
+                    <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">🏠 Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">📰 News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="player of the matches.html">🏅 potm</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+                <h4 class="mb-3 mt-3">🏏 IPL 2025 Match Highlights</h4>
+
+                <div class="row">
+                    <!-- Match 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="video-card" style="min-width: 320px;">
+                            <div class="ratio ratio-16x9">
+                              <iframe src="https://www.youtube.com/embed/ANvLp0MR1q8?si=K5vLzbBLXAzCJtxl" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="mt-2">RCB vs KKR - Match Highlights</h6>
+                            <p class="text-muted">IPL 2025 • 1.2M views • 2 days ago</p>
+                        </div>
+                    </div>
+
+                    <!-- Match 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="video-card" style="min-width: 320px;">
+                            <div class="ratio ratio-16x9">
+                              <iframe src="https://www.youtube.com/embed/iYkuoMhXzhg?si=W6FcMW4k101uX1KV" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="mt-2">SRH vs KKR - Full Match</h6>
+                            <p class="text-muted">IPL 2025 • 980K views • 3 days ago</p>
+                          </div>                
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="video-card" style="min-width: 320px;">
+                            <div class="ratio ratio-16x9">
+                              <iframe src="https://www.youtube.com/embed/i_JWdG4JorA?si=NYQocL6nec4af7IV" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="mt-2">MI vs CSK - Thrilling Finish</h6>
+                            <p class="text-muted">IPL 2025 • 1.5M views • 1 day ago</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="video-card" style="min-width: 320px;">
+                            <div class="ratio ratio-16x9">
+                              <iframe src="https://www.youtube.com/embed/DQcORJthKHI?si=ZI_-K9Gq5tm4xzD_" allowfullscreen></iframe>
+                            </div>
+                            <h6 class="mt-2">Delhi vs Lucknow - Thrilling Finish</h6>
+                            <p class="text-muted">IPL 2025 • 1.5M views • 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex overflow-auto gap-3 pb-3">
+                            <!-- Short 1 -->
+                            <div class="short-card">
+                              <iframe src="https://www.youtube.com/embed/zz90H6sjcrw" title="YouTube Short" allowfullscreen></iframe>
+                            </div>
+                  
+                            <!-- Short 2 -->
+                            <div class="short-card">
+                              <iframe src="https://www.youtube.com/embed/xRr-lr6VBik" title="YouTube Short" allowfullscreen></iframe>
+                            </div>
+                  
+                            <!-- Short 3 -->
+                            <div class="short-card">
+                              <iframe src="https://www.youtube.com/embed/va4mzs13OUI" title="Davil mode activated 💀" allowfullscreen></iframe>
+                            </div>
+                  
+                            <!-- Short 4 -->
+                            <div class="short-card">
+                              <iframe src="https://www.youtube.com/embed/H2h0wmS6xCk" title="Davil mode activated 💀" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
