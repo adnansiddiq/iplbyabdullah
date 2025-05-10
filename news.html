@@ -29,10 +29,21 @@
       margin-top: 56px;
     }
 
+    @media (max-width: 768px) {
+      .main-content {
+        margin-left: 0;
+        padding: 1rem;
+      }
+
+      .sidebar {
+        display: none;
+      }
+    }
+
     .news-section {
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       padding: 2rem;
     }
 
@@ -72,22 +83,9 @@
       margin-bottom: 0.5rem;
     }
 
-    .news-excerpt {
-      color: #444;
-      font-size: 1rem;
-      line-height: 1.5;
-      margin-bottom: 0.5rem;
-    }
-
     .news-meta {
       color: #606060;
       font-size: 0.8rem;
-    }
-
-    .news-image {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
     }
 
     .section-title {
@@ -118,32 +116,55 @@
   </nav>
 
   <!-- Sidebar -->
-  <div class="sidebar">
+  <div class="sidebar d-none d-md-block">
     <ul class="nav flex-column">
       <li class="nav-item"><a class="nav-link" href="index.html">🏠 Home</a></li>
       <li class="nav-item"><a class="nav-link" href="news.html">📰 News</a></li>
-      <li class="nav-item"><a class="nav-link" href="player of the matches.html">🏅 potm</a></li>
+      <li class="nav-item"><a class="nav-link" href="aboutme.html"> 🪪 About Me</a></li>
     </ul>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="d-md-none d-block bg-light fixed-bottom py-2 border-top">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col"><a class="nav-link" href="index.html">🏠 Home</a></div>
+        <div class="col"><a class="nav-link" href="news.html">📰 News</a></div>
+        <div class="col"><a class="nav-link" href="aboutme.html">🪪 About Me</a></div>
+      </div>
+    </div>
   </div>
 
   <!-- Main Content -->
   <div class="main-content">
-    <div class="news-section">
+    <div class="container">
       <h2 class="section-title">Latest Cricket News</h2>
-      
-      <!-- NDTV-style News Card -->
-      <div class="news-card">
-        <a href="dhoni1.html"> <!-- Link to the full article page -->
-          <div class="news-source">IPL HIGHLIGHTS EXCLUSIVE</div>
-          <h3 class="news-title">MS Dhoni's Blockbuster Reply On Playing Next IPL For CSK: "I Don't Know..."</h3>
-          <img src="" alt="MS Dhoni" class="news-image">
-          <p class="news-excerpt">MS Dhoni, under whom Chennai Super Kings won five IPL titles, has answered the retirement question (well, sort of)</p>
-          <div class="news-meta">18 hours ago • 5 min read</div>
-        </a>
+
+      <!-- News Card Wrapper 1 -->
+      <div class="news-section mb-4">
+        <div class="news-card">
+          <a href="news1.html">
+            <div class="news-source">PSL HIGHLIGHTS EXCLUSIVE</div>
+            <h3 class="news-title">PSL 10: Quetta Gladiators Overpower Islamabad United to Consolidate Top Spot</h3>
+            <div class="news-meta">18 hours ago • 5 min read</div>
+          </a>
+        </div>
       </div>
-      <!-- End of News Card -->
+
+      <!-- News Card Wrapper 2 -->
+      <div class="news-section mb-4">
+        <div class="news-card">
+          <a href="news2.html">
+            <div class="news-source">PSL HIGHLIGHTS EXCLUSIVE</div>
+            <h3 class="news-title">PSL 10: Tournament Postponed, Matches to Resume in UAE</h3>
+            <div class="news-meta">18 hours ago • 5 min read</div>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
